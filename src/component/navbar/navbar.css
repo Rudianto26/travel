@@ -1,0 +1,80 @@
+#navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2rem 0;
+}
+
+#navbar .container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#navbar .toggle {
+  display: none;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #000776;
+  font-size: 1.2rem;
+  transition: 0.1s ease-in-out;
+}
+
+#navbar li a:hover {
+  color: #023e8a;
+}
+
+#navbar li:first-of-type a {
+  color: #023e8a;
+  font-weight: 900;
+}
+
+#navbar button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  color: #fff;
+  background-color: #48cae4;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar button:hover {
+  background-color: #023e8a;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  #navbar .brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #navbar .toggle {
+    display: block;
+  }
+  #navbar ul,
+  #navbar button {
+    display: none;
+  }
+}

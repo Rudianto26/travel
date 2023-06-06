@@ -1,0 +1,47 @@
+#services {
+  padding: 9rem 1rem 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+#services .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: aliceblue;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+#services h3 {
+  text-transform: capitalize;
+}
+
+#services p {
+  text-align: center;
+}
+
+#services .service:hover {
+  transform: translateX(0.4rem) translateY(-1rem);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+#services .icon img {
+  height: 2.4rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 720px) {
+  #services {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+  #services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

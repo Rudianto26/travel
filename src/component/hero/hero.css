@@ -1,0 +1,134 @@
+#hero {
+  position: relative;
+  padding-top: 2rem 1rem 0 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#hero .background {
+  height: 100%;
+}
+
+#hero .background img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+#hero .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#hero .title {
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+#hero p {
+  text-align: center;
+  padding: 0 30vw;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#hero .search {
+  display: flex;
+  margin: 0 30vw;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+#hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
+
+#hero label {
+  font-size: 1.1rem;
+  color: #023e8a;
+  font-weight: 600;
+}
+#hero input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  color: #000;
+}
+
+#hero input [type='date'] {
+  padding-left: 3rem;
+}
+
+#hero input [type='date']::placeholder {
+  color: #000;
+}
+
+#hero input:focus {
+  outline: none;
+}
+
+#hero button {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  color: #fff;
+  background-color: #4361ee;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+#hero button:hover {
+  background-color: #023e8a;
+}
+
+@media screen and (min-width: 280px) and (max-width: 980px) {
+  #hero {
+    height: 25rem;
+  }
+  #hero .background img {
+    height: 100%;
+  }
+  #hero .title h1 {
+    font-size: 1rem;
+  }
+  #hero p {
+    font-size: 0.8rem;
+    padding: 1vw;
+  }
+  #hero .search {
+    flex-direction: column;
+    padding: 0.8rem;
+    gap: 0.8rem;
+    margin: 0 10vw;
+  }
+  #hero .container {
+    padding: 0 0.8rem;
+  }
+  #hero input[type='date'] {
+    padding-left: 1rem;
+  }
+  #hero button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
